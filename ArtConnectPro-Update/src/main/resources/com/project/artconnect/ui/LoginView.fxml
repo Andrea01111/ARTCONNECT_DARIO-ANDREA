@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="16" prefWidth="400" prefHeight="300"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.project.artconnect.ui.LoginController"
+      style="-fx-background-color: #f8f8f8;">
+    <padding><Insets top="40" right="60" bottom="40" left="60"/></padding>
+
+    <Label text="ArtConnect Pro" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="emailField" promptText="Adresse email" maxWidth="280"/>
+    <PasswordField fx:id="passwordField" promptText="Mot de passe" maxWidth="280"/>
+
+    <Button text="Se connecter" onAction="#handleLogin" defaultButton="true"
+            style="-fx-background-color: #3a7bd5; -fx-text-fill: white; -fx-pref-width: 280px;"/>
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red; -fx-font-size: 12px;"/>
+</VBox>
