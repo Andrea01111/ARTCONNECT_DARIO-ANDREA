@@ -38,7 +38,6 @@ public class InMemoryGalleryService implements GalleryService {
 
     @Override
     public List<Exhibition> getExhibitionsByGallery(Gallery gallery) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getExhibitionsByGallery'");
     }
 }

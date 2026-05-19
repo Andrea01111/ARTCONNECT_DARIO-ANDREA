@@ -12,8 +12,6 @@ import java.util.Map;
 
 public class JdbcArtistDao implements ArtistDao {
 
-    // ASTUCE OOP : Cette Map garde en mémoire les IDs de la BDD associés aux objets Java, 
-    // sans avoir besoin de rajouter un attribut "id" dans la classe Artist !
     private Map<Artist, Integer> artistIdMap = new IdentityHashMap<>();
 
     @Override
