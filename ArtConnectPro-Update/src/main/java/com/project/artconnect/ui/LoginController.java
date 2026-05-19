@@ -33,6 +33,7 @@ public class LoginController {
                     getClass().getResource("/com/project/artconnect/ui/MainView.fxml"));
                 Scene scene = new Scene(loader.load(), 1200, 800);
                 Stage stage = (Stage) emailField.getScene().getWindow();
+                stage.setTitle("ArtConnect Pro — Recherche · Authentification · Notifications");
                 stage.setScene(scene);
             } catch (Exception e) {
                 e.printStackTrace();

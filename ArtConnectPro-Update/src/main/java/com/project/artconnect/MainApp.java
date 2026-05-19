@@ -11,7 +11,7 @@ public class MainApp extends Application {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/project/artconnect/ui/LoginView.fxml"));
         Scene scene = new Scene(loader.load(), 500, 350);
-        stage.setTitle("ArtConnect Pro - Connexion");
+        stage.setTitle("ArtConnect Pro — Connexion");
         stage.setScene(scene);
         stage.show();
     }
